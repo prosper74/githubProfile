@@ -1,0 +1,85 @@
+@import "../../styles.scss";
+
+a {
+	list-style: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+.repo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.repoTitle {
+  margin-bottom: 1rem;
+}
+
+.repoContainer {
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 970px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.repoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: $containerColor;
+  padding: 1.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.repoDescription {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.repoMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftMeta {
+  display: flex;
+  align-items: center;
+}
+
+.language,
+.starRating,
+.forked {
+  display: flex;
+  align-items: center;
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+  }
+}
+
+.starRating {
+  margin: 0 0.75rem;
+}
+
+.repoSize {
+  display: flex;
+  justify-self: flex-end;
+  text-align: right;
+}
