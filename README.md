@@ -16,8 +16,7 @@ To deploy, run `npm run build` and copy the build folder to your server
 
 ## Usage
 
-Simply enter the github username and click add  
-To view more github user's details, click on the card
+Simply enter the github username and click Submit
 
 ## Built With
 

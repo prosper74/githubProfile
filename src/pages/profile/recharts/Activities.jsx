@@ -1,10 +1,12 @@
+import "../charts.scss";
+
 import {
   AreaChart,
   Area,
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip
+  Tooltip,
 } from "recharts";
 
 const data = [
@@ -12,40 +14,41 @@ const data = [
     name: "Page A",
     uv: 4000,
     pv: 2400,
-    amt: 2400
+    amt: 2400,
   },
   {
     name: "Page B",
     uv: 3000,
     pv: 1398,
-    amt: 2210
+    amt: 2210,
   },
   {
     name: "Page C",
     uv: 2000,
     pv: 9800,
-    amt: 2290
+    amt: 2290,
   },
   {
     name: "Page D",
     uv: 2780,
     pv: 3908,
-    amt: 2000
-  }
+    amt: 2000,
+  },
 ];
 
 export default function Activities() {
   return (
     <AreaChart
+      className="activities"
       width={300}
       height={270}
-			fontSize={12}
+      fontSize={12}
       data={data}
       margin={{
         top: 20,
         right: 10,
         left: -20,
-        bottom: 0
+        bottom: 0,
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
