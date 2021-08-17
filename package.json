@@ -2,6 +2,8 @@
   "name": "github-card-graphql",
   "version": "1.0.0",
   "description": "",
+  "private": "true",
+  "homepage": ".",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
