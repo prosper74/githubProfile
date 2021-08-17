@@ -4,7 +4,6 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "http://gitname.github.io/githubprofile",
   "dependencies": {
     "@apollo/client": "^3.4.7",
     "@iconscout/react-unicons": "1.1.6",
